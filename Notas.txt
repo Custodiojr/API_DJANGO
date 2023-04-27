@@ -1,0 +1,40 @@
+#fluxo do django
+1- rota => para criar uma rota devera ir ate o projecto/url.py
+2 - view
+3 - html
+
+# Crie o ambiente virtual
+python -m venv venv
+
+# Ative o ambiente virtual (para Windows)
+venv\Scripts\activate
+
+1.comando para criar app django
+=> django-admin startapp app_cad_usuario
+
+2.comando para criar o projecto django
+=> django-admin startproject projectp_cad_usuarios
+
+3.comando para fazer a migrations
+=> python .\manage.py makemigrations
+
+4.lancar na bd 
+=> python .\manage.py migrate
+
+5. Ligar o servidor
+=> python manage.py runserver
+
+6. Aplicar as migracoes pedentes
+=> python manage.py migrate
+
+7.Aplicar migracao especifica
+=> python manage.py migrate app_cad_usuario
+
+8. Criar o admin
+=> django-admin startapp api
+
+9. installar os conectores de mysql
+pip install mysqlclient pymysql
+
+10.criar um superUser
+python manage.py createsuperuser
